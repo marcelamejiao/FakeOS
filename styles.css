@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.notification-bar {
+  height: 8vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem 0 0.5rem;
+}
+.notification-bar__time {
+  text-align: right;
+  width: 100%;
+  color: aliceblue;
+}
+
+.phone-content {
+  height: 84vh;
+  background-image: url("./img/wallpaper.png");
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.phone-menu {
+  background-color: black;
+  height: 8vh;
+}
+.phone-menu__nav {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=styles.css.map */

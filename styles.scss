@@ -1,0 +1,54 @@
+// reset default styling 
+
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+.notification-bar {
+	height: 8vh;
+	background-color: black;
+	display: flex;
+	align-items: center;
+	padding: 0 0.5rem 0 0.5rem;
+
+	&__time {
+		text-align: right;
+		width: 100%;
+		color: aliceblue;
+	}
+}
+
+// style phone content / apps
+
+.phone-content {
+	height: 84vh;
+	background-image: url('./img/wallpaper.png');
+  background-size: cover;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+// style footer-phone menu
+
+.phone-menu {
+	background-color: black;
+	height: 8vh;
+
+	&__nav {
+		height: 8vh;
+
+		display: flex;
+		align-items: center;
+	}
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-around;
+}
