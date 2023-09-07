@@ -52,3 +52,12 @@
 	width: 100%;
 	justify-content: space-around;
 }
+
+.navigation-button {
+	background-color: black;
+	border: 0;
+
+	&__icon {
+		color: rgba(255, 255, 255, 0.872);
+	}
+}

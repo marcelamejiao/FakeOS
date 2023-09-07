@@ -44,4 +44,12 @@
   justify-content: space-around;
 }
 
+.navigation-button {
+  background-color: black;
+  border: 0;
+}
+.navigation-button__icon {
+  color: rgba(255, 255, 255, 0.872);
+}
+
 /*# sourceMappingURL=styles.css.map */
