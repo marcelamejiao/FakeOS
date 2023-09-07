@@ -5,6 +5,7 @@
 	margin: 0;
 	text-decoration: none;
 	list-style-type: none;
+	font-family: sans-serif;
 }
 
 .notification-bar {
@@ -31,6 +32,34 @@
 	justify-content: space-around;
 	align-items: center;
 }
+
+.app {
+	padding: 1rem;
+
+	&__img {
+		width: 100%;
+		display: block;
+		border-radius: 1rem;
+		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+	}
+
+	&__name {
+		text-align: center;
+		color: white;
+		text-shadow: 1px 1px 4px #000000;
+		padding-top: 0.5rem;
+		font-weight: 400;
+	}
+}
+
+
+
+
+
+
+
+
+
 
 // style footer-phone menu
 
