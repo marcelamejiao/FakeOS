@@ -1,3 +1,17 @@
+// Get the current time
+const updateTime = () => {
+	const time = new Date();
+	const hoursMinutesTime = time.getHours() + ":" + time.getMinutes();
+
+	const currentTime = document.querySelector("#currentTime");
+	currentTime.textContent = hoursMinutesTime;
+};
+// To update the time immediately the function is executed first
+updateTime();
+// Updates the time every second
+setInterval(updateTime, 1000);
+
+
 // Get the modal
 const modal = document.querySelector("#myModal");
 
