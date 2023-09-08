@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="./styles.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<script src="https://kit.fontawesome.com/a3292c6ca0.js" crossorigin="anonymous"></script>
+	<script defer src="./script.js"></script>
 	<title>FakeOS</title>
 </head>
 <body>
@@ -13,31 +14,45 @@
 		<h4 class="notification-bar__time">Time</h4>
 	</header>
 
-	<main class="phone-content">
-			<div class="app">
-				<img class="app__img"  src="./img/icon-meditation.jpg" alt="yoga">
+	<main >
+		<section class="phone-content">
+			<div class="app modal-open-button">
+				<img class= "app__img"  src="./img/icon-meditation.jpg" alt="yoga">
 				<p class="app__name">Yoga</p>
 			</div>
-			<div class="app">
+			<div class="app modal-open-button">
 				<img class="app__img" src="./img/gratitude.jpg" alt="gratitude">
 				<p class="app__name">Gratitude</p>
 			</div>
-			<div class="app">
+			<div class="app modal-open-button">
 				<img class="app__img" src="./img/my-music.jpg" alt="music">
 				<p class="app__name">Music</p>
 			</div>
+		</section>
+
+		<section class="modals">
+			<div id="myModal" class="modal modal--hidden">
+
+			</div>
+			<div  class="modal modal--hidden">
+
+			</div>
+			<div class="modal modal--hidden">
+
+			</div>
+		</section>
 	</main>
 
 	<footer class="phone-menu">
 		<nav class="phone-menu__nav">
 			<ul class="navigation">
 				<li>
-					<button class="navigation-button">
+					<button class="close navigation-button">
 						<i class="navigation-button__icon fa-solid fa-angle-left"></i>
 					</button>
 				</li>
 				<li>
-					<button class="navigation-button">
+					<button class="close navigation-button">
 						<i class="navigation-button__icon fa-solid fa-house"></i>
 					</button>
 				</li>
