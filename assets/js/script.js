@@ -1,3 +1,5 @@
+import { init } from "./gratitude.js";
+
 // Get the current time
 const updateTime = () => {
 	const time = new Date();
@@ -35,3 +37,4 @@ appCloseButtons.forEach((button) => {
 	});
 });
 
+init();

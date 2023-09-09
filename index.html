@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 	<script src="https://kit.fontawesome.com/a3292c6ca0.js" crossorigin="anonymous"></script>
-	<script defer src="./assets/js/script.js"></script>
+	<script defer type="module" src="./assets/js/script.js"></script>
 	<title>FakeOS</title>
 </head>
 <body>
@@ -37,7 +37,7 @@
 			<div  class="modal modal--hidden">
 			</div>
 
-			<div id="myModal" class="modal modal--hidden">
+			<div id="myModal" class="modal modal--hidden gratitude-app">
 				<form id="gratitudeForm" class="todays-affirmation">
 					<h2 class="todays-affirmation__title">Today's Affirmation</h2>
 					<div class="todays-affirmation__container">
@@ -47,9 +47,8 @@
 							required 
 							placeholder="Insert your thoughs here:" 
 							name="todaysAffirmation" 
-							id="todaysAffirmation" 
-							cols="28" 
-							rows="10">
+							id="todaysAffirmation"
+							>
 						</textarea>
 						<button class="todays-affirmation__container__button" type="submit">Save</button>
 					</div>

@@ -1,3 +1,8 @@
+.gratitude-app {
+  background-image: url("./img/flowers-app.jpg");
+  background-size: cover;
+}
+
 .todays-affirmation {
   font-family: "Roboto Mono", monospace;
 }
@@ -22,6 +27,9 @@
   border-radius: 4%;
   margin: 0.5rem;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  margin: 1rem;
+  width: 70%;
+  height: 30vh;
 }
 .todays-affirmation__container__text:hover {
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
