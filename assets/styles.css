@@ -110,6 +110,7 @@
   color: #b08fb8;
   text-align: center;
   text-shadow: 0.1rem 0.1rem 0.1rem rgb(49, 46, 46);
+  padding: 1rem;
   font-size: xx-large;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
@@ -225,18 +226,25 @@
   list-style-type: none;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 .notification-bar {
   height: 8vh;
   background-color: black;
   display: flex;
   align-items: center;
-  padding: 0 0.5rem 0 0.5rem;
+  padding: 0 1rem 0 1rem;
+}
+.notification-bar__icon {
+  color: aliceblue;
 }
 .notification-bar__time {
   text-align: right;
   width: 100%;
   color: aliceblue;
-  padding-right: 0.5rem;
+  font-size: x-large;
 }
 
 .phone-content {
@@ -301,7 +309,7 @@
 .navigation-button {
   background-color: black;
   border: 0;
-  padding: 0 1rem 0 1rem;
+  padding: 1rem;
 }
 .navigation-button__icon {
   color: rgba(255, 255, 255, 0.872);

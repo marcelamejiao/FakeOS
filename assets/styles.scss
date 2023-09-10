@@ -11,6 +11,10 @@
 	list-style-type: none;
 }
 
+body {
+	font-family: sans-serif;
+}
+
 // Notification bar
 
 .notification-bar {
@@ -18,13 +22,17 @@
 	background-color: black;
 	display: flex;
 	align-items: center;
-	padding: 0 0.5rem 0 0.5rem;
+	padding: 0 1rem 0 1rem;
+
+	&__icon {
+		color: aliceblue;
+	}
 
 	&__time {
 		text-align: right;
 		width: 100%;
 		color: aliceblue;
-		padding-right: 0.5rem;
+		font-size: x-large;
 	}
 }
 
@@ -102,7 +110,7 @@
 .navigation-button {
 	background-color: black;
 	border: 0;
-	padding: 0 1rem 0 1rem;
+	padding: 1rem;
 
 	&__icon {
 		color: rgba(255, 255, 255, 0.872);
