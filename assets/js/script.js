@@ -3,7 +3,10 @@ import { init } from "./gratitude.js";
 // Get the current time
 const updateTime = () => {
 	const time = new Date();
-	const hoursMinutesTime = time.getHours() + ":" + time.getMinutes();
+	const hoursMinutesTime = 
+		time.getHours().toString().padStart(2,"0")
+		+ ":" 
+		+ time.getMinutes().toString().padStart(2,"0");
 
 	const currentTime = document.querySelector("#currentTime");
 	currentTime.textContent = hoursMinutesTime;
