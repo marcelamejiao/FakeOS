@@ -1,6 +1,6 @@
 //Today's Affirmation functions
 
-function saveAffirmation(event) {
+const saveAffirmation = (event) => {
   const todaysAffirmation = document.getElementById("todaysAffirmation").value;
   const date = new Date;
   const actualDate = date.toLocaleDateString();
@@ -24,7 +24,7 @@ function saveAffirmation(event) {
   renderAffirmations();
 }
 
-function renderAffirmations() {
+const renderAffirmations = () => {
   let currentAffirmations = [];
 
   if (window.sessionStorage.getItem("affirmations")) {

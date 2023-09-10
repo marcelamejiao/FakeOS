@@ -1,25 +1,30 @@
 let slideIndex = 1;
-showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+const plusSlides = (n) => {
   showSlides(slideIndex += n);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("yoga-slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+const showSlides = (n) => {
+  const slides = document.getElementsByClassName("yoga-slide");
+  if (n > slides.length) {
+    slideIndex = 1;
   }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  for (const slide of slides) {
+    slide.style.display = "none";
+  }
+
   slides[slideIndex-1].style.display = "block";
 }
 
 // Initialise function
-
 export const init = () => {
+  showSlides(slideIndex);
+
 	const previousButton = document.querySelector("#previousButton");
 	previousButton.addEventListener("click", (e) => {
 		plusSlides(-1);
