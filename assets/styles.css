@@ -1,5 +1,5 @@
 .gratitude-app {
-  background-image: url("./img/sunsent-wallpaper.png");
+  background-image: url("./img/gratitude/wallpaper.png");
   background-size: cover;
 }
 
@@ -88,7 +88,7 @@
 
 .phone-content {
   height: 84vh;
-  background-image: url("./img/blue.png");
+  background-image: url("./img/phone-wallpaper.png");
   background-size: cover;
   display: flex;
   justify-content: space-around;
