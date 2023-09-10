@@ -1,7 +1,6 @@
 //Today's Affirmation functions
 
 function saveAffirmation(event) {
-  event.preventDefault();
   const todaysAffirmation = document.getElementById("todaysAffirmation").value;
   const date = new Date;
   const actualDate = date.toLocaleDateString();
@@ -19,6 +18,9 @@ function saveAffirmation(event) {
   currentAffirmations.push(todaysAffirmationObject);
   window.sessionStorage.setItem("affirmations", JSON.stringify(currentAffirmations));
 
+  // Clear the text area after saving the affirmation
+  document.getElementById("todaysAffirmation").value = '';
+
   renderAffirmations();
 }
 
@@ -27,25 +29,24 @@ function renderAffirmations() {
 
   if (window.sessionStorage.getItem("affirmations")) {
     currentAffirmations = JSON.parse(window.sessionStorage.getItem("affirmations"));
+    
+    // Sort the affirmations from most recent to the oldest
+    currentAffirmations = currentAffirmations.reverse();
   }
 
-  let listAffirmations = [];
-
-  for (let i = 0; i < currentAffirmations.length; i++) {
-    const currentAffirmation = currentAffirmations[i];
+  const listAffirmations = currentAffirmations.map((currentAffirmation) => {
     let listAffirmation = "";
-    listAffirmation += '<p class="affirmation">'
+    listAffirmation += '<p class="affirmation">';
     listAffirmation += currentAffirmation.actualDate;
     listAffirmation += ' - ';
     listAffirmation += currentAffirmation.todaysAffirmation;
-    listAffirmation += '</p>'
-    listAffirmations.push(listAffirmation);
-  }
+    listAffirmation += '</p>';
+
+    return listAffirmation;
+  });
   
   document.getElementById("affirmations").innerHTML = listAffirmations.join('');
-
 }
-
 
 // Initialise function
 
@@ -55,6 +56,5 @@ export const init = () => {
 	gratitudeForm.addEventListener("submit", (e) => {
 		e.preventDefault();
 		return saveAffirmation(e);
-	})
+	});
 }
-
