@@ -19,25 +19,25 @@
 
 	<main >
 		<section class="phone-content">
-			<div class="app modal-open-button">
+			<div id="openButtonYoga" class="app modal-open-button">
 				<img class= "app__img"  src="./assets/img/icon-meditation.jpg" alt="yoga">
 				<p class="app__name">Yoga</p>
 			</div>
-			<div class="app modal-open-button">
+			<div id="openButtonGratitude" class="app modal-open-button">
 				<img class="app__img" src="./assets/img/gratitude.jpg" alt="gratitude">
 				<p class="app__name">Gratitude</p>
 			</div>
-			<div class="app modal-open-button">
+			<div id="openButtonMusic" class="app modal-open-button">
 				<img class="app__img" src="./assets/img/my-music.jpg" alt="music">
 				<p class="app__name">Music</p>
 			</div>
 		</section>
 
 		<section class="modals">
-			<div  class="modal modal--hidden">
+			<div id="yogaModal" class="modal modal--hidden">
 			</div>
 
-			<div id="myModal" class="modal modal--hidden gratitude-app">
+			<div id="gratitudeModal" class="modal modal--hidden gratitude-app">
 				<form id="gratitudeForm" class="todays-affirmation">
 					<h2 class="todays-affirmation__title">Today's Affirmation</h2>
 					<div class="todays-affirmation__container">
@@ -48,15 +48,14 @@
 							placeholder="Insert your thoughs here:" 
 							name="todaysAffirmation" 
 							id="todaysAffirmation"
-							>
-						</textarea>
+							></textarea>
 						<button class="todays-affirmation__container__button" type="submit">Save</button>
 					</div>
 				</form>
-				<div id="affirmations"></div>
+				<div id="affirmations" class="affirmations"></div>
 			</div>
 
-			<div class="modal modal--hidden">
+			<div id="musicModal" class="modal modal--hidden">
 			</div>
 
 		</section>

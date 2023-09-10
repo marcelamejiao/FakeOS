@@ -34,7 +34,7 @@ function renderAffirmations() {
   for (let i = 0; i < currentAffirmations.length; i++) {
     const currentAffirmation = currentAffirmations[i];
     let listAffirmation = "";
-    listAffirmation += '<p>'
+    listAffirmation += '<p class="affirmation">'
     listAffirmation += currentAffirmation.actualDate;
     listAffirmation += ' - ';
     listAffirmation += currentAffirmation.todaysAffirmation;
