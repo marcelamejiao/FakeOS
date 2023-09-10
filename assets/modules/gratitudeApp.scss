@@ -1,11 +1,9 @@
 
 .gratitude-app{
+	font-family: 'Roboto Mono', monospace;
+
 	background-image: url('./img/gratitude/wallpaper.png');
 	background-size: cover;
-}
-
-.todays-affirmation {
-	font-family: 'Roboto Mono', monospace;
 
 	&__title {
 		color:#b08fb8;
@@ -15,6 +13,16 @@
 		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 	}
 
+	&__content {
+		display:flex;
+		flex-direction: column;
+		height: 84vh;
+	}
+}
+
+.todays-affirmation {
+	flex-grow: 1;
+
 	&__container {
 		background-color: #ffffff7d;
 		display: flex;
@@ -23,47 +31,51 @@
 		margin: 1rem;
 		border-radius: 2rem;
 		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+	}
+}
 
-		
-		&__text {
-			border: rgba(0, 0, 0, 0.22) dashed 1rem;
-			border-radius: 4%;
-			box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-			margin: 1rem;
-			width: 70%;
-			height: 30vh;
-			text-align: center;
-			padding: 0.5rem;
+.affirmation-container {
+	&__text {
+		border: rgba(0, 0, 0, 0.22) dashed 1rem;
+		border-radius: 4%;
+		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+		margin: 1rem;
+		width: 70%;
+		height: 30vh;
+		text-align: center;
+		padding: 0.5rem;
 	
-			&:focus {
-				outline: none;
-			}
-
-			&:hover {
-				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-			}
+		&:focus {
+			outline: none;
 		}
 	
-		&__button{
-			background-color: #b08fb8;
-			border-radius: 10rem;
-			margin-bottom: 1rem;
-			color: rgb(255, 255, 255);
-			padding: 0.3rem;
-			cursor: pointer;
-			width: 60%;
-			text-shadow: 0.1rem 0.1rem 0.1rem rgb(49, 46, 46);
-			font-size: large;
-			box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
-	
-			&:hover {
-				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-			}
+		&:hover {
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+	}
+
+	&__submit {
+		background-color: #b08fb8;
+		border-radius: 10rem;
+		margin-bottom: 1rem;
+		color: rgb(255, 255, 255);
+		padding: 0.3rem;
+		cursor: pointer;
+		width: 60%;
+		text-shadow: 0.1rem 0.1rem 0.1rem rgb(49, 46, 46);
+		font-size: large;
+		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+
+		&:hover {
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 		}
 	}
 }
 
 .affirmations {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 50%;
 	margin: 0 1rem 1rem 1rem;
   background-color: #ffffff7d;
   border-radius: 2rem;
@@ -72,4 +84,5 @@
 
 .affirmation {
 	margin: 0.1rem 0 0.1rem 0;
+	word-break: break-all;
 }

@@ -1,7 +1,8 @@
 @use "./modules/yogaApp.scss";
 @use "./modules/gratitudeApp.scss";
+@use "./modules/musicApp.scss";
 
-// reset default styling 
+// Reset default styling 
 
 * {
 	padding: 0;
@@ -9,6 +10,8 @@
 	text-decoration: none;
 	list-style-type: none;
 }
+
+// Notification bar
 
 .notification-bar {
 	height: 8vh;
@@ -25,7 +28,7 @@
 	}
 }
 
-// style phone content / apps
+// Style phone content / apps
 
 .phone-content {
 	height: 84vh;
@@ -75,7 +78,7 @@
 	}
 }
 
-// style footer-phone menu
+// Footer-phone menu
 
 .phone-menu {
 	background-color: black;

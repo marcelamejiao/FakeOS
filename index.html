@@ -38,54 +38,71 @@
 			<div id="yogaModal" class="modal modal--hidden yoga">
 				<h2 class="yoga__title">YOGA ME TIME</h2>
 				<div class="yoga__container">
-					<div class="yoga__container__slides--fade slides">
-						<div class="slides__number">1/4</div>
-						<img class="slides__image" src="./assets/img/yoga/camel-pose.jpg" style="width:100%">
-						<div class="slides__text">Camel Pose</div>
+					<div class="yoga-slide yoga-slide--fade">
+						<div class="yoga-slide__number">1/4</div>
+						<img class="yoga-slide__image" src="./assets/img/yoga/camel-pose.jpg" style="width:100%">
+						<div class="yoga-slide__text">Camel Pose</div>
 					</div>
-					<div class="yoga__container__slides--fade slides">
-						<div class="slides__number">2/4</div>
-						<img class="slides__image" src="./assets/img/yoga/metta.jpg" style="width:100%">
-						<div class="slides__text">Metta</div>
+					<div class="yoga-slide yoga-slide--fade">
+						<div class="yoga-slide__number">2/4</div>
+						<img class="yoga-slide__image" src="./assets/img/yoga/metta.jpg" style="width:100%">
+						<div class="yoga-slide__text">Metta</div>
 					</div>
-					<div class="yoga__container__slides--fade slides">
-						<div class="slides__number">3/4</div>
-						<img class="slides__image" src="./assets/img/yoga/sphinx-pose.jpg" style="width:100%">
-						<div class="slides__text">Sphinx Pose</div>
+					<div class="yoga-slide yoga-slide--fade">
+						<div class="yoga-slide__number">3/4</div>
+						<img class="yoga-slide__image" src="./assets/img/yoga/sphinx-pose.jpg" style="width:100%">
+						<div class="yoga-slide__text">Sphinx Pose</div>
 					</div>
-					<div class="yoga__container__slides--fade slides">
-						<div class="slides__number">4/4</div>
-						<img class="slides__image" src="./assets/img/yoga/low-lunge.jpg" style="width:100%">
-						<div class="slides__text">Sphinx Pose</div>
+					<div class="yoga-slide yoga-slide--fade">
+						<div class="yoga-slide__number">4/4</div>
+						<img class="yoga-slide__image" src="./assets/img/yoga/low-lunge.jpg" style="width:100%">
+						<div class="yoga-slide__text">Sphinx Pose</div>
 					</div>
-					<a id="previousButton" class="yoga__container__slides-button">&#10094;</a>
-					<a id="nextButton" class="yoga__container__slides-button--right">&#10095;</a>
+					<a id="previousButton" class="slides-button">&#10094;</a>
+					<a id="nextButton" class="slides-button--right">&#10095;</a>
 				</div>
 			</div>
 
 			<div id="gratitudeModal" class="modal modal--hidden gratitude-app">
-				<form id="gratitudeForm" class="todays-affirmation">
-					<h2 class="todays-affirmation__title">Today's Affirmation</h2>
-					<div class="todays-affirmation__container">
-						<label for="todaysAffirmation"></label>
-						<textarea 
-							class="todays-affirmation__container__text"
-							required 
-							placeholder="Insert your thoughs here:" 
-							name="todaysAffirmation" 
-							id="todaysAffirmation"
-							></textarea>
-						<button class="todays-affirmation__container__button" type="submit">Save</button>
-					</div>
-				</form>
-				<div id="affirmations" class="affirmations"></div>
+				<h2 class="gratitude-app__title">Today's Affirmation</h2>
+				<div class="gratitude-app__content">
+					<form id="gratitudeForm" class="todays-affirmation">
+						<div class="todays-affirmation__container affirmation-container">
+							<label for="todaysAffirmation"></label>
+							<textarea 
+								class="affirmation-container__text"
+								required 
+								placeholder="Insert your thoughs here:" 
+								name="todaysAffirmation" 
+								id="todaysAffirmation"
+								></textarea>
+							<button class="affirmation-container__submit" type="submit">Save</button>
+						</div>
+					</form>
+					<div id="affirmations" class="affirmations"></div>
+				</div>
 			</div>
 
-			<div id="musicModal" class="modal modal--hidden">
-				<audio controls class="song-player" src="./assets/audio/Scott Holmes Music - Our Big Adventure.mp3"></audio>
-				<audio controls class="song-player" src="./assets/audio/Scott Holmes Music - Our Big Adventure.mp3"></audio>
-				<audio controls class="song-player" src="./assets/audio/Scott Holmes Music - Our Big Adventure.mp3"></audio>
-				<audio controls class="song-player" src="./assets/audio/Scott Holmes Music - Our Big Adventure.mp3"></audio>
+			<div id="musicModal" class="modal modal--hidden music">
+				<h2 class="music__title">My playlist🎧</h2>
+				<div class="music__container">
+					<div class="song">
+						<h3 class="song__title">Scott Holmes Music - Our Big Adventure</h3>
+						<audio controls class="song__audio" src="./assets/audio/Scott Holmes Music - Our Big Adventure.mp3"></audio>
+					</div>
+					<div class="song">
+						<h3 class="song__title">Scott Holmes Music - Hotshot</h3>
+						<audio controls class="song__audio" src="./assets/audio/Scott Holmes Music - Hotshot.mp3"></audio>
+					</div>
+					<div class="song">
+						<h3 class="song__title">Scott Holmes Music - Skip in my Step</h3>
+						<audio controls class="song__audio" src="./assets/audio/Scott Holmes Music - Skip in my Step.mp3"></audio>
+					</div>
+					<div class="song">
+						<h3 class="song__title">Scott Holmes Music - We Are One</h3>
+						<audio controls class="song__audio" src="./assets/audio//Scott Holmes Music - We Are One.mp3"></audio>
+					</div>
+				</div>
 			</div>
 
 		</section>
