@@ -1,0 +1,92 @@
+@use '../partials/_mixins.scss';
+
+* {
+	box-sizing:border-box;
+}
+
+
+.yoga {
+
+	font-family: 'Roboto Mono', monospace;
+	background-image: url('./img/yoga/wallpaper.png');
+	background-size: cover;
+	
+	&__title {
+		text-shadow: 2px 2px 0  
+		#52acc886, 2px -2px 0 #52acc886, -2px 2px 0
+		#52acc886, -2px -2px 0 #52acc886, 2px 0px 0  
+		#52acc886, 0px 2px 0  #52acc886, -2px 0px 0 
+		#52acc886, 0px -2px 0  #52acc886;
+		color:  white;
+		background: rgba(24, 24, 24, 0.96);
+		text-align: center;
+		font-size: xx-large;
+		padding: 1rem;
+		box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+	}
+
+	&__container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+		background-color: #52acc849;
+		margin: 3rem 1rem 1rem 1rem;
+		border-radius: 2rem;
+		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+	
+		// Hide the images by default
+		&__slides {
+			display: none;
+
+			&--fade {
+				animation-name: fade;
+				animation-duration: 1.5s;
+			}
+		}
+
+		&__slides-button {
+			@include mixins.slidesButtons;
+
+			// Position the "next button" to the right
+			&--right {
+				@include mixins.slidesButtons;
+				right: 0;
+				border-radius: 3px 0 0 3px;
+			}
+		}
+	}
+}
+
+.slides {
+	&__number {
+		color: #f2f2f2;
+		font-size: 2rem;
+		padding: 4rem;
+		position: absolute;
+		top: 0;
+		text-shadow: 0.1rem 0.1rem 0.1rem #000000f3;
+	}
+
+	&__image {
+		padding: 2rem;
+		border-radius: 6rem;
+	}
+
+	&__text {
+		color: #f2f2f2;
+		font-size: 2rem;
+		text-shadow: 0.1rem 0.1rem 0.1rem #000000f3;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+//Fading animation
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

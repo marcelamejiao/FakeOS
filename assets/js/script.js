@@ -1,4 +1,6 @@
-import { init } from "./gratitude.js";
+import { init as initYoga } from "./yoga.js";
+import { init as initGratitude } from "./gratitude.js";
+
 
 // Get the current time
 const updateTime = () => {
@@ -52,4 +54,5 @@ appCloseButtons.forEach((button) => {
 	});
 });
 
-init();
+initYoga();
+initGratitude();
