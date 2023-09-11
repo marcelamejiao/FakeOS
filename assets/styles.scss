@@ -1,9 +1,11 @@
 @use "./modules/yogaApp.scss";
 @use "./modules/gratitudeApp.scss";
 @use "./modules/musicApp.scss";
+@use './partials/_typography.scss';
+@use './partials/_palette.scss';
+@use './partials/_mixins.scss';
 
 // Reset default styling 
-
 * {
 	padding: 0;
 	margin: 0;
@@ -12,27 +14,26 @@
 }
 
 body {
-	font-family: sans-serif;
+	font-family: typography.$andriod-font;
 }
 
 // Notification bar
-
 .notification-bar {
 	height: 8vh;
-	background-color: black;
 	display: flex;
 	align-items: center;
 	padding: 0 1rem 0 1rem;
+	background-color: palette.$basic-color-black;
 
 	&__icon {
-		color: aliceblue;
+		color: palette.$basic-color-white;
 	}
 
 	&__time {
 		text-align: right;
 		width: 100%;
-		color: aliceblue;
-		font-size: x-large;
+		font-size: typography.$x-large-font;
+		color: palette.$basic-color-white;
 	}
 }
 
@@ -45,7 +46,6 @@ body {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	font-family: sans-serif;
 }
 
 .app {
@@ -55,24 +55,23 @@ body {
 		width: 100%;
 		display: block;
 		border-radius: 1rem;
-		box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+		@include mixins.box-shadow;
 
 		&:hover {
-				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+			@include mixins.dark-hover;
 		}
 	}
 
 	&__name {
-		text-align: center;
-		color: white;
-		text-shadow: 1px 1px 4px #000000;
+		color: palette.$basic-color-white;
+		text-shadow: 1px 1px 4px palette.$basic-color-black;
 		padding-top: 0.5rem;
 		font-weight: 400;
+		text-align: center;
 	}
 }
 
 // The Modal
-
 .modal {
   position: fixed; 
   z-index: 1; 
@@ -89,12 +88,11 @@ body {
 // Footer-phone menu
 
 .phone-menu {
-	background-color: black;
+	background-color: palette.$basic-color-black;
 	height: 8vh;
 
 	&__nav {
 		height: 8vh;
-
 		display: flex;
 		align-items: center;
 	}
@@ -103,16 +101,16 @@ body {
 .navigation {
 	display: flex;
 	align-items: center;
-	width: 100%;
 	justify-content: space-around;
+	width: 100%;
 }
 
 .navigation-button {
-	background-color: black;
+	background-color: palette.$basic-color-black;
 	border: 0;
 	padding: 1rem;
 
 	&__icon {
-		color: rgba(255, 255, 255, 0.872);
+		color: palette.$basic-color-white;
 	}
 }

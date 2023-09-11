@@ -8,21 +8,21 @@
   background-size: cover;
 }
 .yoga__title {
-  text-shadow: 2px 2px 0 rgba(82, 172, 200, 0.5254901961), 2px -2px 0 rgba(82, 172, 200, 0.5254901961), -2px 2px 0 rgba(82, 172, 200, 0.5254901961), -2px -2px 0 rgba(82, 172, 200, 0.5254901961), 2px 0px 0 rgba(82, 172, 200, 0.5254901961), 0px 2px 0 rgba(82, 172, 200, 0.5254901961), -2px 0px 0 rgba(82, 172, 200, 0.5254901961), 0px -2px 0 rgba(82, 172, 200, 0.5254901961);
-  color: white;
-  background: rgba(24, 24, 24, 0.96);
-  text-align: center;
+  color: aliceblue;
+  background: black;
   font-size: xx-large;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  text-shadow: 2px 2px 0 rgba(82, 172, 200, 0.5254901961), 2px -2px 0 rgba(82, 172, 200, 0.5254901961), -2px 2px 0 rgba(82, 172, 200, 0.5254901961), -2px -2px 0 rgba(82, 172, 200, 0.5254901961), 2px 0px 0 rgba(82, 172, 200, 0.5254901961), 0px 2px 0 rgba(82, 172, 200, 0.5254901961), -2px 0px 0 rgba(82, 172, 200, 0.5254901961), 0px -2px 0 rgba(82, 172, 200, 0.5254901961);
+  text-align: center;
   padding: 1rem;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
 .yoga__container {
   max-width: 1000px;
   position: relative;
   margin: auto;
-  background-color: rgba(82, 172, 200, 0.2862745098);
   margin: 3rem 1rem 1rem 1rem;
   border-radius: 2rem;
+  background-color: rgba(0, 0, 0, 0.24);
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
@@ -33,7 +33,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: aliceblue;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -41,7 +41,7 @@
   user-select: none;
 }
 .slides-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .slides-button--right {
   cursor: pointer;
@@ -50,7 +50,7 @@
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: aliceblue;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -60,7 +60,7 @@
   border-radius: 3px 0 0 3px;
 }
 .slides-button--right:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .yoga-slide {
@@ -71,21 +71,21 @@
   animation-duration: 1.5s;
 }
 .yoga-slide__number {
-  color: #f2f2f2;
   font-size: 2rem;
   padding: 4rem;
   position: absolute;
   top: 0;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.9529411765);
+  color: aliceblue;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
 }
 .yoga-slide__image {
   padding: 2rem;
   border-radius: 6rem;
 }
 .yoga-slide__text {
-  color: #f2f2f2;
+  color: aliceblue;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
   font-size: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.9529411765);
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
@@ -107,62 +107,62 @@
   background-size: cover;
 }
 .gratitude-app__title {
-  color: #b08fb8;
   text-align: center;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgb(49, 46, 46);
   padding: 1rem;
   font-size: xx-large;
+  color: #b08fb8;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
 }
 .gratitude-app__content {
   display: flex;
   flex-direction: column;
-  height: 84vh;
+  height: 75vh;
 }
 
 .todays-affirmation {
   flex-grow: 1;
 }
 .todays-affirmation__container {
-  background-color: rgba(255, 255, 255, 0.4901960784);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
   border-radius: 2rem;
+  background-color: rgba(255, 255, 255, 0.4901960784);
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 
 .affirmation-container__text {
-  border: rgba(0, 0, 0, 0.22) dashed 1rem;
-  border-radius: 4%;
-  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
   margin: 1rem;
   width: 70%;
   height: 30vh;
   text-align: center;
   padding: 0.5rem;
+  border-radius: 4%;
+  border: rgba(0, 0, 0, 0.24) dashed 1rem;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 .affirmation-container__text:focus {
   outline: none;
 }
 .affirmation-container__text:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.24);
 }
 .affirmation-container__submit {
-  background-color: #b08fb8;
   border-radius: 10rem;
   margin-bottom: 1rem;
-  color: rgb(255, 255, 255);
   padding: 0.3rem;
-  cursor: pointer;
   width: 60%;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgb(49, 46, 46);
+  cursor: pointer;
   font-size: large;
+  color: aliceblue;
+  background-color: #b08fb8;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 .affirmation-container__submit:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.24);
 }
 
 .affirmations {
@@ -170,9 +170,12 @@
   overflow-x: hidden;
   height: 50%;
   margin: 0 1rem 1rem 1rem;
-  background-color: rgba(255, 255, 255, 0.4901960784);
   border-radius: 2rem;
   padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.4901960784);
+}
+.affirmations:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.24);
 }
 
 .affirmation {
@@ -186,11 +189,11 @@
   background-size: cover;
 }
 .music__title {
-  color: white;
   text-align: center;
-  font-size: xx-large;
   padding: 1rem;
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  font-size: xx-large;
+  color: aliceblue;
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 .music__container {
   height: 70vh;
@@ -199,21 +202,20 @@
   align-items: center;
   justify-content: space-around;
   margin: 1rem;
-  border-radius: 2rem;
-  box-shadow: 1px 1px 3px 0px rgb(237, 230, 230);
+  border-radius: 1rem;
 }
 
 .song {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.4901960784);
   border-radius: 1rem;
   padding: 1rem;
-  box-shadow: 1px 1px 3px 0px rgb(237, 230, 230);
+  background-color: rgba(255, 255, 255, 0.4901960784);
+  box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 .song__title {
   text-align: center;
-  text-shadow: 0.1rem 0.1rem 0.1rem rgba(254, 250, 250, 0.9529411765);
   padding-bottom: 0.5rem;
+  text-shadow: 0.1rem 0.1rem 0.1rem rgba(254, 250, 250, 0.9529411765);
 }
 .song__audio {
   width: 100%;
@@ -232,10 +234,10 @@ body {
 
 .notification-bar {
   height: 8vh;
-  background-color: black;
   display: flex;
   align-items: center;
   padding: 0 1rem 0 1rem;
+  background-color: black;
 }
 .notification-bar__icon {
   color: aliceblue;
@@ -243,8 +245,8 @@ body {
 .notification-bar__time {
   text-align: right;
   width: 100%;
-  color: aliceblue;
   font-size: x-large;
+  color: aliceblue;
 }
 
 .phone-content {
@@ -254,7 +256,6 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-family: sans-serif;
 }
 
 .app {
@@ -267,14 +268,14 @@ body {
   box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.75);
 }
 .app__img:hover {
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.24);
 }
 .app__name {
-  text-align: center;
-  color: white;
-  text-shadow: 1px 1px 4px #000000;
+  color: aliceblue;
+  text-shadow: 1px 1px 4px black;
   padding-top: 0.5rem;
   font-weight: 400;
+  text-align: center;
 }
 
 .modal {
@@ -302,8 +303,8 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: space-around;
+  width: 100%;
 }
 
 .navigation-button {
@@ -312,7 +313,7 @@ body {
   padding: 1rem;
 }
 .navigation-button__icon {
-  color: rgba(255, 255, 255, 0.872);
+  color: aliceblue;
 }
 
 /*# sourceMappingURL=styles.css.map */
