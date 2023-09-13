@@ -1,0 +1,116 @@
+@use "./modules/yogaApp.scss";
+@use "./modules/gratitudeApp.scss";
+@use "./modules/musicApp.scss";
+@use './partials/_typography.scss';
+@use './partials/_palette.scss';
+@use './partials/_mixins.scss';
+
+// Reset default styling 
+* {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+}
+
+body {
+	font-family: typography.$andriod-font;
+}
+
+// Notification bar
+.notification-bar {
+	height: 8vh;
+	display: flex;
+	align-items: center;
+	padding: 0 1rem 0 1rem;
+	background-color: palette.$basic-color-black;
+
+	&__icon {
+		color: palette.$basic-color-white;
+	}
+
+	&__time {
+		text-align: right;
+		width: 100%;
+		font-size: typography.$x-large-font;
+		color: palette.$basic-color-white;
+	}
+}
+
+// Style phone content / apps
+
+.phone-content {
+	height: 84vh;
+	background-image: url('./img/phone-wallpaper.png');
+  background-size: cover;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.app {
+	padding: 1rem;
+
+	&__img {
+		width: 100%;
+		display: block;
+		border-radius: 1rem;
+		@include mixins.box-shadow;
+
+		&:hover {
+			@include mixins.dark-hover;
+		}
+	}
+
+	&__name {
+		color: palette.$basic-color-white;
+		text-shadow: 1px 1px 4px palette.$basic-color-black;
+		padding-top: 0.5rem;
+		font-weight: 400;
+		text-align: center;
+	}
+}
+
+// The Modal
+.modal {
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 92vh; // All the height minus the phone menu
+
+	&--hidden {
+		display: none; // Hidden by default
+	}
+}
+
+// Footer-phone menu
+
+.phone-menu {
+	background-color: palette.$basic-color-black;
+	height: 8vh;
+
+	&__nav {
+		height: 8vh;
+		display: flex;
+		align-items: center;
+	}
+}
+
+.navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.navigation-button {
+	background-color: palette.$basic-color-black;
+	border: 0;
+	padding: 1rem;
+
+	&__icon {
+		color: palette.$basic-color-white;
+	}
+}

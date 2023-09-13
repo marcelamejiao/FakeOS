@@ -1,0 +1,45 @@
+@use '../partials/_mixins.scss';
+@use "../partials/_typography.scss";
+@use "../partials/_palette.scss";
+
+.music{
+	font-family: typography.$apps-font;
+	background-image: url('./img/music/wallpaper.png');
+	background-size: cover;
+
+	&__title {
+		text-align: center;
+		padding: 1rem;
+		font-size: typography.$xx-large-font;
+		color: palette.$basic-color-white;
+		@include mixins.box-shadow;
+	}
+
+	&__container {
+		height: 70vh;
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		justify-content: space-around;
+		margin: 1rem;
+		border-radius: 1rem;
+	}
+}
+
+.song {
+	width: 100%;
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: palette.$background-transparency;
+	@include mixins.box-shadow;
+
+	&__title {
+		text-align: center;
+		padding-bottom: 0.5rem;
+		@include mixins.text-light-shadow;
+	}
+
+	&__audio {
+		width: 100%;
+	}
+}

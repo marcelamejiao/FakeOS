@@ -1,0 +1,95 @@
+@use "../partials/_typography.scss";
+@use "../partials/_palette.scss";
+@use '../partials/_mixins.scss';
+
+.gratitude-app{
+	font-family: typography.$apps-font;
+	background-image: url('./img/gratitude/wallpaper.png');
+	background-size: cover;
+
+	&__title {
+		text-align: center;
+		padding: 1rem;
+		font-size: typography.$xx-large-font;
+		color:palette.$gratitude-main-color;
+		@include mixins.box-shadow;
+		@include mixins.text-shadow;
+	}
+
+	&__content {
+		display:flex;
+		flex-direction: column;
+		height: 75vh;
+	}
+}
+
+.todays-affirmation {
+	flex-grow: 1;
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 1rem;
+		border-radius: 2rem;
+		background-color: palette.$background-transparency;
+		@include mixins.box-shadow;
+	}
+}
+
+.affirmation-container {
+	&__text {
+		margin: 1rem;
+		width: 70%;
+		height: 30vh;
+		text-align: center;
+		padding: 0.5rem;
+		border-radius: 4%;
+		border:palette.$box-shadow-light dashed 1rem;
+		@include mixins.box-shadow;
+	
+		&:focus {
+			outline: none;
+		}
+	
+		&:hover {
+			@include mixins.dark-hover;
+		}
+	}
+
+	&__submit {
+		border-radius: 10rem;
+		margin-bottom: 1rem;
+		padding: 0.3rem;
+		width: 60%;
+		cursor: pointer;
+		font-size: typography.$large-font;
+		color: palette.$basic-color-white;
+		background-color: palette.$gratitude-main-color;
+		@include mixins.text-shadow;
+		@include mixins.box-shadow;
+
+		&:hover {
+			@include mixins.dark-hover;
+		}
+	}
+}
+
+.affirmations {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 50%;
+	margin: 0 1rem 1rem 1rem;
+  border-radius: 2rem;
+  padding: 1rem;
+	background-color: palette.$background-transparency;
+
+	&:hover {
+		@include mixins.dark-hover;
+	}
+}
+
+.affirmation {
+	margin: 0.1rem 0 0.1rem 0;
+	word-break: break-all;
+}

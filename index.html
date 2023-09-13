@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="./assets/styles.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<script src="https://kit.fontawesome.com/a3292c6ca0.js" crossorigin="anonymous"></script>
+	<script defer type="module" src="./assets/js/script.js"></script>
+	<title>FakeOS</title>
+</head>
+<body>
+	<header class="notification-bar">
+		<i class="notification-bar__icon fa-solid fa-wifi fa-lg"></i>
+		<i class="notification-bar__icon fa-solid fa-signal fa-lg"></i>
+		<i class="notification-bar__icon fa-solid fa-battery-three-quarters fa-rotate-270"></i>
+		<i class="notification-bar__icon fa-brands fa-bluetooth-b fa-lg"></i>
+		<h4 id="currentTime" class="notification-bar__time"></h4>
+	</header>
+
+	<main >
+		<section class="phone-content">
+			<div id="openButtonYoga" class="app modal-open-button">
+				<img class= "app__img"  src="./assets/img/yoga/icon.jpg" alt="yoga">
+				<p class="app__name">Yoga</p>
+			</div>
+			<div id="openButtonGratitude" class="app modal-open-button">
+				<img class="app__img" src="./assets/img/gratitude/icon.jpg" alt="gratitude">
+				<p class="app__name">Gratitude</p>
+			</div>
+			<div id="openButtonMusic" class="app modal-open-button">
+				<img class="app__img" src="./assets/img/music/icon.jpg" alt="music">
+				<p class="app__name">Music</p>
+			</div>
+		</section>
+
+		<section class="modals">
+
+			<div id="yogaModal" class="modal modal--hidden yoga">
+				<h2 class="yoga__title">YOGA ME TIME</h2>
+				<div class="yoga__container">
+					<div class="yoga-slide yoga-slide--fade">
+						<div class="yoga-slide__number">1/4</div>
+						<img class="yoga-slide__image" src="./assets/img/yoga/camel-pose.jpg" style="width:100%">
+						<div class="yoga-slide__text">Camel Pose</div>
+					</div>
+					<div class="yoga-slide yoga-slide--fade">
+						<div class="yoga-slide__number">2/4</div>
+						<img class="yoga-slide__image" src="./assets/img/yoga/metta.jpg" style="width:100%">
+						<div class="yoga-slide__text">Metta</div>
+					</div>
+					<div class="yoga-slide yoga-slide--fade">
+						<div class="yoga-slide__number">3/4</div>
+						<img class="yoga-slide__image" src="./assets/img/yoga/sphinx-pose.jpg" style="width:100%">
+						<div class="yoga-slide__text">Sphinx Pose</div>
+					</div>
+					<div class="yoga-slide yoga-slide--fade">
+						<div class="yoga-slide__number">4/4</div>
+						<img class="yoga-slide__image" src="./assets/img/yoga/low-lunge.jpg" style="width:100%">
+						<div class="yoga-slide__text">Low Lunge</div>
+					</div>
+					<a id="previousButton" class="slides-button">&#10094;</a>
+					<a id="nextButton" class="slides-button--right">&#10095;</a>
+				</div>
+			</div>
+
+			<div id="gratitudeModal" class="modal modal--hidden gratitude-app">
+				<h2 class="gratitude-app__title">Today's Affirmation</h2>
+				<div class="gratitude-app__content">
+					<form id="gratitudeForm" class="todays-affirmation">
+						<div class="todays-affirmation__container affirmation-container">
+							<label for="todaysAffirmation"></label>
+							<textarea 
+								class="affirmation-container__text"
+								required 
+								placeholder="Insert your thoughs here:" 
+								name="todaysAffirmation" 
+								id="todaysAffirmation"
+								></textarea>
+							<button class="affirmation-container__submit" type="submit">Save</button>
+						</div>
+					</form>
+					<div id="affirmations" class="affirmations"></div>
+				</div>
+			</div>
+
+			<div id="musicModal" class="modal modal--hidden music">
+				<h2 class="music__title">My playlist🎧</h2>
+				<div class="music__container">
+					<div class="song">
+						<h3 class="song__title">Scott Holmes Music - Our Big Adventure</h3>
+						<audio controls class="song__audio" src="./assets/audio/Scott Holmes Music - Our Big Adventure.mp3"></audio>
+					</div>
+					<div class="song">
+						<h3 class="song__title">Scott Holmes Music - Hotshot</h3>
+						<audio controls class="song__audio" src="./assets/audio/Scott Holmes Music - Hotshot.mp3"></audio>
+					</div>
+					<div class="song">
+						<h3 class="song__title">Scott Holmes Music - Skip in my Step</h3>
+						<audio controls class="song__audio" src="./assets/audio/Scott Holmes Music - Skip in my Step.mp3"></audio>
+					</div>
+					<div class="song">
+						<h3 class="song__title">Scott Holmes Music - We Are One</h3>
+						<audio controls class="song__audio" src="./assets/audio//Scott Holmes Music - We Are One.mp3"></audio>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</main>
+
+	<footer class="phone-menu">
+		<nav class="phone-menu__nav">
+			<ul class="navigation">
+				<li>
+					<button class="close navigation-button">
+						<i class="navigation-button__icon fa-solid fa-angle-left fa-2xl"></i>
+					</button>
+				</li>
+				<li>
+					<button class="close navigation-button">
+						<i class="navigation-button__icon fa-solid fa-house fa-2xl"></i>
+					</button>
+				</li>
+				<li>
+					<button class="navigation-button">
+						<i class="navigation-button__icon fa-solid fa-bars fa-2xl"></i>
+					</button>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+</body>
+</html>

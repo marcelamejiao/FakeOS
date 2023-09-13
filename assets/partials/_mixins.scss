@@ -1,0 +1,45 @@
+@use "../partials/_palette.scss";
+
+@mixin dark-hover {
+	box-shadow: 0 12px 16px 0 palette.$box-shadow-light, 0 17px 50px 0 palette.$box-shadow-light;
+}
+
+@mixin box-shadow {
+	box-shadow: 1px 1px 3px 0px palette.$box-shadow-dark;
+}
+
+@mixin text-shadow {
+	text-shadow: 0.1rem 0.1rem 0.1rem palette.$basic-color-black;
+}
+
+@mixin text-light-shadow {
+	text-shadow: 0.1rem 0.1rem 0.1rem #fefafaf3;
+}
+
+@mixin blue-text-shadow {
+	text-shadow: 2px 2px 0  
+	palette.$yoga-main-color, 2px -2px 0 palette.$yoga-main-color, -2px 2px 0
+	palette.$yoga-main-color, -2px -2px 0 palette.$yoga-main-color, 2px 0px 0  
+	palette.$yoga-main-color, 0px 2px 0  palette.$yoga-main-color, -2px 0px 0 
+	palette.$yoga-main-color, 0px -2px 0  palette.$yoga-main-color;
+}
+// Yoga App
+@mixin slides-buttons {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: palette.$basic-color-white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+
+	&:hover {
+		background-color: palette.$box-shadow-dark;			
+	}
+}
+

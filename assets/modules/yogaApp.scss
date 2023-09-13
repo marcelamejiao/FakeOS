@@ -1,0 +1,86 @@
+@use '../partials/_mixins.scss';
+@use "../partials/_typography.scss";
+@use "../partials/_palette.scss";
+
+* {
+	box-sizing:border-box;
+}
+
+.yoga {
+
+	font-family: typography.$apps-font;
+	background-image: url('./img/yoga/wallpaper.png');
+	background-size: cover;
+	
+	&__title {
+		color: palette.$basic-color-white;
+		background: palette.$basic-color-black;
+		font-size: typography.$xx-large-font;
+		@include mixins.box-shadow;
+		@include mixins.blue-text-shadow;
+		text-align: center;
+		padding: 1rem;
+	}
+
+	&__container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+		margin: 3rem 1rem 1rem 1rem;
+		border-radius: 2rem;
+		background-color: palette.$box-shadow-light;
+		@include mixins.box-shadow;
+	}
+}
+
+.slides-button {
+	@include mixins.slides-buttons;
+
+	// Position the "next button" to the right
+	&--right {
+		@include mixins.slides-buttons;
+		right: 0;
+		border-radius: 3px 0 0 3px;
+	}
+}
+
+.yoga-slide {
+	// Hide the images by default
+	display: none;
+
+	&--fade {
+		animation-name: fade;
+		animation-duration: 1.5s;
+	}
+	
+	&__number {
+		font-size: 2rem;
+		padding: 4rem;
+		position: absolute;
+		top: 0;
+		color: palette.$basic-color-white;
+		@include mixins.text-shadow;
+	}
+
+	&__image {
+		padding: 2rem;
+		border-radius: 6rem;
+	}
+
+	&__text {
+		color: palette.$basic-color-white;
+		@include mixins.text-shadow;
+		font-size: 2rem;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+//Fading animation
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
