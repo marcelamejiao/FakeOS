@@ -2,7 +2,7 @@
 
 const saveAffirmation = (event) => {
   const todaysAffirmation = document.getElementById("todaysAffirmation").value;
-  const date = new Date;
+  const date = new Date();
   const actualDate = date.toLocaleDateString();
 
   const todaysAffirmationObject = {
