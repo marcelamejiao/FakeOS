@@ -37,7 +37,7 @@ Using modals to display the applications and interact with them was a new topic 
 
 ## **Deployed link**
 
-💡 Live version: [click here!(to be deployed)]()
+💡 Live version: [click here!](https://marcelamejiao.github.io/FakeOS/)
 
 ## **Future Development**
 
